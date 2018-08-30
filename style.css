@@ -1,0 +1,32 @@
+body{
+  font-family: 'Amatic SC', cursive;
+  margin: 0;
+  padding: 0;
+  background-color: lightblue;
+  color: green;
+}
+
+#container{
+  padding: 150px 0;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.link{
+  list-style: none;
+  color:red;
+  font-size: 2em;
+}
+
+.link a{
+  color: orange;
+}
+
+a {
+  color: red;
+  transition: color 500ms;
+}
+
+a:hover{
+  color: white;
+}
