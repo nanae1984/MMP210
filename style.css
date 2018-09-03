@@ -3,7 +3,7 @@ body{
   margin: 0;
   padding: 0;
   background-color: lightblue;
-  color: green;
+  color: navy;
 }
 h1{
     font-size: 5em;
@@ -13,23 +13,23 @@ h1{
 }
 
 #container{
-  padding: 150px 0;
+  padding: 100px 100;
   width: 500px;
   margin: 0 auto;
 }
 
 .link{
   list-style: none;
-  color:red;
+  color:hotpink;
   font-size: 2em;
 }
 
 .link a{
-  color: orange;
+  color: olive;
 }
 
-a {
-  color: red;
+a {  
+  color: chocolate;
   transition: color 500ms;
 }
 
@@ -37,3 +37,6 @@ a:hover{
   color: white;
 }
 
+p {
+    font-size: 2em;
+}
