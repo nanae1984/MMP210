@@ -5,6 +5,12 @@ body{
   background-color: lightblue;
   color: green;
 }
+h1{
+    font-size: 5em;
+    border-style: solid;
+    box-shadow: 5px 10px #888888;
+    text-align: center;
+}
 
 #container{
   padding: 150px 0;
@@ -30,3 +36,4 @@ a {
 a:hover{
   color: white;
 }
+
