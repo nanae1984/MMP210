@@ -3,6 +3,7 @@
     v1
     by nanae
     mmp 210 exple week2
+    hard coded vol1
 */
 
 function setup() {
