@@ -49,8 +49,8 @@ function draw() {
     strokeWeight(sw);
     triangle(tx, ty, tx+5, ty-80, tx+45, ty-30);//right ear
     triangle(tx+10, ty, tx+15, ty-60, tx+35, ty-30);//right ear
-    triangle(tx2-30, ty-30, tx2+10, ty+10, tx2+30, tx2-20);//left ear
-    triangle(tx2-20, ty-30, tx2-10, ty+10, tx2+15, tx2);//left ear
+    triangle(tx2-30, ty-30, tx2+10, ty-10, tx2+30, tx2-20);//left ear
+    triangle(tx2-20, ty-30, tx2-10, ty-10, tx2+15, tx2);//left ear
     ellipse(ex, ey+5, ew,ew+10); // face
    
 	fill(eyeball); // half transparent
