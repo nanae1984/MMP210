@@ -1,9 +1,9 @@
 /*
     Self Portrait
-    v2
+    v 3
     by nanae
-    mmp 210 exple week3
-    variable 
+    mmp 210 exple week4
+    interactive
 */
 
 function setup() {
@@ -25,7 +25,7 @@ function draw() {
     var es = 20;
     var ex = 100;
     var ew = 150;
-    var hx = 95;
+    var hx = mouseX;
     var hy = 155;
     var hy2 = 220;
     var fx = 300;
@@ -34,7 +34,7 @@ function draw() {
     var fyl = 100;
     var fxb = 530;
     var fyb = 340;
-    var rx = 85;
+    var rx = mouseX;
     var ry = 265;
     var rw = 30;
     var rh = 30;
@@ -42,6 +42,10 @@ function draw() {
     var lx1 = 120;
     var lx2 = 50;
     var ly = 260;
+    var x = pmouseX;
+    var y = pmouseY;
+    var s = 35; // size
+    var f = frameCount;
     
     rectMode(CENTER);
     fill(faceColor); // half transparent
@@ -51,7 +55,7 @@ function draw() {
     triangle(tx+10, ty, tx+15, ty-60, tx+35, ty-30);//right ear
     triangle(tx2-30, ty-30, tx2+10, ty-10, tx2+30, tx2-20);//left ear
     triangle(tx2-20, ty-30, tx2-10, ty-10, tx2+15, tx2);//left ear
-    ellipse(ex, ey+5, ew,ew+10); // face
+    ellipse(ex, ey+5, f,f+10); // face
    
 	fill(eyeball); // half transparent
     stroke(outline); 
@@ -90,10 +94,10 @@ function draw() {
     line(lx2,ly+10,lx2-40,ly+20);// mustache right
     
     fill(karashi);
-    ellipse(fx,fy+30,es*2); //footsteps right
-    ellipse(fx-25,fy,es);
-    ellipse(fx,fy-10,es);
-    ellipse(fx+30,fy,es);
+    ellipse(fx,f/2+30,f/10*2); //footsteps right
+    ellipse(fx-25,f/2,f/10);
+    ellipse(fx,f/2-10,f/10);
+    ellipse(fx+30,f/2,f/10);
     
     ellipse(fxl,fyl,es*2); //footsteps left
     ellipse(fxl-35,fyl,es);
