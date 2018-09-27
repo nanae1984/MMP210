@@ -5,13 +5,14 @@
     mmp 210 exple week4
     interactive
 */
-
+var r = 255, g = 255, b = 255; // initialize rgb globally
 function setup() {
 	createCanvas(640, 460);
 }
 
 function draw() {
 	background(220);
+    fill(r, g, b);
     
     var faceColor = color(250, 217, 220);
     var outline = color(146, 208, 217);
@@ -110,3 +111,4 @@ function draw() {
     ellipse(fxb+25,fyb-30,es);
     
 }
+
