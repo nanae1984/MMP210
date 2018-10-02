@@ -23,24 +23,18 @@ function draw() {
     var ex = mouseX;//150
     var ex2=35;
     var ew = 150;
-    var hx = 145;
-    var hy = 155;
-    var hy2 = 220;
     var fx = 300;
     var fy = 270;
     var fxl = 500;
     var fyl = 100;
     var fxb = 530;
     var fyb = 340;
-    var rx = 140;
-    var ry = 265;
-    var rw = 30;
-    var rh = 30;
-    var rs = 0;
     var s = 200; // size
 	var o = 50; // offset
     var mx = frameCount;//50;
     var my= 400;
+    var mouseColor =color('#696969');
+    var mouseEar =color('#A9A9A9');
     
     // footsteps
      fill(karashi);
@@ -60,34 +54,34 @@ function draw() {
     ellipse(fxb+25,fyb-30,es);
     
     //mouse
-    fill('#696969');
+    fill(mouseColor);
     stroke('black');
     strokeWeight(0.5);
     ellipse(mx+10, my-10, 17, 20);//mouse ear behind
-     fill('#A9A9A9');
-    stroke('#696969');
+     fill(mouseEar);
+    stroke(mouseColor);
     strokeWeight(1);
     ellipse(mx, my, 40, 25);// body
     ellipse(mx+20, my, 5, 5);// nose
     
-    fill('#696969');
+    fill(mouseColor);
     stroke('black');
     strokeWeight(0.5);
     ellipse(mx, my-10, 17, 20);//ear front
     ellipse(mx+10, my-5, 1, 2);//eye
     
     //mouse 2
-    fill('#696969');
+    fill(mouseColor);
     stroke('black');
     strokeWeight(0.5);
     ellipse(mx+60, my-60, 17, 20);//mouse ear behind
-     fill('#A9A9A9');
-    stroke('#696969');
+     fill(mouseEar);
+    stroke(mouseColor);
     strokeWeight(1);
     ellipse(mx+50, my-50, 40, 25);// body
     ellipse(mx+70, my-50, 5, 5);// nose
     
-    fill('#696969');
+    fill(mouseColor);
     stroke('black');
     strokeWeight(0.5);
     ellipse(mx+50, my-60, 17, 20);//ear front
@@ -96,9 +90,9 @@ function draw() {
     //body
     fill(faceColor); // half transparent
     noStroke();
-    //rect(ex+90,ey-10, 70,10,10);//tale
     ellipse(ex, ey+90, ew-80,ew-40); // body front
     
+    //tale
     noFill();
     stroke(faceColor);
     strokeWeight(sw+5);
@@ -147,23 +141,6 @@ function draw() {
     ellipse(ex-57, ey, ex2); // right eye
 	ellipse(ex+43, ey, ex2); // left eye
 
-	//noFill();
-	//stroke(outline); 
-	//strokeWeight(sw);
-	//rect(rx, ry-5, rw-10, rh-20, rs+10); // mouth	
-    //arc(rx+15, ry, rw, rh, rs, PI);
-    //arc(rx-15, ry, rw, rh, rs, PI);
-    //arc(rx+3, ry+14, rw-8, rh-10, rs, PI);
-    
-   //stroke(karashi);
-    //line(hx-45,hy+23,hx-45,hy2-1); //hair bangs
-    //line(hx-35,hy+15,hx-45,hy2); 
-   // line(hx-20,hy+5,hx-20,hy2-5);
-   // line(hx-5,hy,hx-20,hy2-5);
-    //line(hx,hy,hx,hy2);
-   // line(hx+15,hy+5,hx,hy2);
-    //line(hx+25,hy+5,hx+40,hy2-5);
-    //line(hx+45,hy+7,hx+40,hy2-5);
     
     strokeWeight(sw-4)
     line(ex+20,ey+30,ex+90,ey+20);//mustache left
