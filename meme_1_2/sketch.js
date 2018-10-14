@@ -44,12 +44,12 @@ function draw() {
     rectMode(CENTER);
     
     noTint();
-    image(brain,0,0,width,height);
-   // if (mouseX < 100 || mouseX > 400 || mouseY < 100 || mouseY > 400) {
-       // image(paper2, 100, 100, width / 2, height / 2);
-   // } else {
-      //  image(paper, 100, 100, width / 2, height / 2);
-   // }
+    //image(brain,0,0,width,height);
+    if (mouseX < 100 || mouseX > 400 || mouseY < 100 || mouseY > 400) {
+       image(paper2, 100, 100, width / 2, height / 2);
+   } else {
+        image(paper, 100, 100, width / 2, height / 2);
+    }
 
     if (mouseX < width/2 && mouseY < height/2) {
 		// top left
