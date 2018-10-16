@@ -68,7 +68,7 @@ if (mouseX > width/2){
     if (mouseX < width/2 && mouseY < height/2) {
 		// top left
 		image(word, mouseX/3, mouseY, 250, 250);
-       
+
 	} else if (mouseX > width/2 && mouseY < height/2) {
 		// top right
 		image(pink, mouseX/3, mouseY, 200, 200);
@@ -110,7 +110,7 @@ if (mouseX > width/2){
     }
     
     if (keyIsPressed && keyCode == 32) {
-        location.href = '../https://nanae1984.github.io/MMP210/meme_1_2/'
+        location.href = '../meme_1_2/'
     }
 }
    

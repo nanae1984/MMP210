@@ -1,43 +1,56 @@
 <!doctype html>
 <html>
-  <head>
+
+<head>
     <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|IM+Fell+English" rel="stylesheet">
 
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>MMP 210</title>
-  
-  </head>
-    
-  <body>
-      <video autoplay muted loop id="myVideo">
+
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
           
         <source src="ANI402.mp4" type="video/mp4">
         </video>
     <div id="container">
-      <h1>Nanae Itoi</h1>
-        
-       
-      <ul>
-        <li class="link"><a href="https://youtu.be/ba6MtHVlEmo" target="blank"> 3D Animation</a></li>
-          <li class="link"><a href="https://youtu.be/xPiHEFa1FeI" target="blank">2D Animation</a></li>
-          <li class="link"><a href="https://youtu.be/P2Fs41Z4V7o" target="blank">Video Editing</a></li>
-         <li><a href="../self-portrait/index.html">Self Portrait</a></li>
-        <li><a href="../self-portrait_1/index.html">Self Portrait 1</a></li>
-        <li><a href="../self-portrait_2/index.html">Self Portrait 2</a></li>
-          <li><a href = "meme_0">Logo 0</a></li>
-          <li><a href = "meme_1/">Logo 1</a></li>
-          
-      </ul>
-        
+        <h1>Nanae Itoi</h1>
+
+
+        <ul>
+            <li class="link"><a href="https://youtu.be/ba6MtHVlEmo" target="blank"> 3D Animation</a></li>
+            <li class="link"><a href="https://youtu.be/xPiHEFa1FeI" target="blank">2D Animation</a></li>
+            <li class="link"><a href="https://youtu.be/P2Fs41Z4V7o" target="blank">Video Editing</a></li>
+            <li><a href="../self-portrait/index.html">Self Portrait</a></li>
+            <li><a href="../self-portrait_1/index.html">Self Portrait 1</a></li>
+            <li><a href="../self-portrait_2/index.html">Self Portrait 2</a></li>
+            <li><a href="meme_0">Logo 0</a></li>
+            <li><a href="meme_1/">Logo 1</a></li>
+
+        </ul>
+
         <li class="link"><a href="https://nanart.itch.io/robo-a-fire-fighter" target="blank"><img src="boss.png"> </a></li>
-        <button id="myBtn" onclick="myFunction()">Pause</button>
-        
+        <button id="myBtn" onclick="toggleVideo()">Pause</button>
+        <script>
+            function toggleVideo() {
+                if (myVideo.paused) {
+                    myVideo.play();
+                    myBtn.textContent = "Pause";
+                } else {
+                    myVideo.pause();
+                    myBtn.textContent = "Play";
+                }
+            }
+        </script>
+
         <script src="meme_1/p5.min.js"></script>
         <script src="meme_1/sketch.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.20/p5.min.js" type="text/javascript"></script>
         <script src="../p5.gif.js" type="text/javascript"></script>
-        	
+
     </div>
-  </body>
+</body>
+
 </html>
