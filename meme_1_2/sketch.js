@@ -7,10 +7,9 @@
  */
 
 var paper; // global
-var gif;
 //var paint;
 var paper2;
-
+ var bunny = createImg("bunny.gif")
 
 function preload() {
     paper = loadImage("paper.png");
@@ -21,13 +20,13 @@ function preload() {
 
 function setup() {
     createCanvas(500, 500);
-    gif = loadGif('bunny.gif');
+   
 }
 
 function draw() {
     background(220);
     rectMode(CENTER);
-    image(gif, 0, 0);
+    bunny.position(50,100)
     
    // mouse funtion
     if (mouseX < 100 || mouseX > 400 || mouseY < 100 || mouseY > 400) {
