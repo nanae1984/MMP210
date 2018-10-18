@@ -52,17 +52,11 @@ function setup() {
 function draw() {
     background(0);
     rectMode(CENTER);
-    	
-	
-    noTint();
+    
     image(brain,x, y,width,height);
     x += random(-5, 5);
 	y += random(-5, 5);
-   // if (mouseX < 100 || mouseX > 400 || mouseY < 100 || mouseY > 400) {
-       // image(paper2, 100, 100, width / 2, height / 2);
-   // } else {
-      //  image(paper, 100, 100, width / 2, height / 2);
-   // }
+   
     
     if (mouseX < width/2 && mouseY < height/2) {
 		// top left
