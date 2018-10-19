@@ -56,7 +56,11 @@ function draw() {
     image(brain,x, y,width,height);
     x += random(-5, 5);
 	y += random(-5, 5);
-   
+  // push();
+   //translate(300, height/2);
+  //  image(pink, 300, 100);
+    
+   // pop();
     
     if (mouseX < width/2 && mouseY < height/2) {
 		// top left
