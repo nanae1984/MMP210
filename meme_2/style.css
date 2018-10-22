@@ -1,8 +1,7 @@
 body{
   font-family: 'Amatic SC', cursive;
-  margin: 0;
-  padding: 0;
-  background-color: lightblue;
+  margin: 200;
+  padding: 100;
   color: navy;
 }
 h1{
@@ -29,8 +28,9 @@ h1{
 }
 
 a {  
-  color: chocolate;
+  color: slategray;
   transition: color 500ms;
+
 }
 
 a:hover{
