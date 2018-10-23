@@ -11,11 +11,13 @@ var brain;
 //var cube;
 var word;
 var word2;
+var s = 100;
 //var creative;
 //var logical;
 var keyIsPressed;
-var x = 100;
-var y = 100;
+var x1 = 100;
+var x2 = 100;
+var y1 = 100;
 var speed = 1;
 var puzzle;
 var v = 0;
@@ -54,9 +56,9 @@ function draw() {
     background(0);
     rectMode(CENTER);
     
-	image(brain,x-100, 0,width,height);
-	x += speed;
-	if (x > width || x < 0) {
+	image(brain,x1-100, 0,width,height);
+    x1 += speed*2;
+	if (x1 > width-290 || x1 < 0) {
 		speed *= -1;
 	}
     image(word, 410, 270, 100,200);
@@ -69,16 +71,17 @@ function draw() {
    // if (y <0){
         //y = height;
    // }
-    image(flower, width/2 + 50, y,50,50);
-	y += speed;
-    image(flower,x, y, 40,40);
-    x +=1;
-    y +=2;
-    if (x > width) {
-		x = 0;
+    image(flower, width/2 + 50, y1,50,50);
+    x2 += 1;
+	y1 += 1;
+    image(flower,x2, y1, 40,40);
+    x2 += 1;
+    y1 += 1;
+    if (x2 > width) {
+		x2 = 0;
 	}
-    if (y > height) {
-		y = 0;
+    if (y1 > height) {
+		y1 = 0;
 	}
     //image(flower2,x-40, y-70, 40,40);
     //x +=0.5;
