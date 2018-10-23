@@ -6,7 +6,7 @@
     mmp 210 week 7
  */
 
-
+var green;
 var brain;
 //var cube;
 var word;
@@ -37,7 +37,7 @@ function preload() {
     puzzle = loadImage("puzzle.png");
     flower = loadImage("flower.png");
     flower2 = loadImage("flower2.png");
-    
+    green = loadImage("green.png");
     
 
 
@@ -89,6 +89,8 @@ function draw() {
     if (y1 > height) {
 		y1 = 0;
 	}
+     
+    
     //image(flower2,x-40, y-70, 40,40);
     //x +=0.5;
     //y +=0.5;
@@ -191,6 +193,17 @@ function draw() {
     text(frameCount % mod-110, frameCount % mod-110, 460);
     if (keyIsPressed && keyCode == 32) {
         location.href = '../'
+    }
+    
+    stroke(245,250,255,0.5); noFill();
+    rectMode(CORNER);
+    rect(200, 200, 200, 100);
+    if (mouseIsPressed && mouseX > 250 && mouseX < 200 + 200
+       && mouseY > 200 && mouseY < 200 + 100) {
+        var r1 = random(500);
+        var r2 = random(400);
+
+        image(green, r1, r2, 50, 50);
     }
 }
    
