@@ -18,6 +18,7 @@ var keyIsPressed;
 var x1 = 100;
 var x2 = 100;
 var y1 = 100;
+var y2 = 100;
 var speed = 1;
 var puzzle;
 var v = 0;
@@ -71,6 +72,11 @@ function draw() {
    // if (y <0){
         //y = height;
    // }
+    image(flower, width/2 + 150, y2,50,50);
+    y2 += 1.5;
+    if (y2 > height) {
+        y2= 0;
+    }
     image(flower, width/2 + 50, y1,50,50);
     x2 += 1;
 	y1 += 1;
