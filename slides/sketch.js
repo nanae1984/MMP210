@@ -56,7 +56,7 @@ function setup() {
     textAlign(CENTER, CENTER);
     
     flip.playMode("restart");
-    //bkmusic.loop();
+    bkmusic.loop();
 
 	
 	noStroke();
