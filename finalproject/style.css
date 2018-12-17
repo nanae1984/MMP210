@@ -40,3 +40,11 @@ a:hover{
 p {
     font-size: 2em;
 }
+
+#gif {
+    position: relative;
+}
+
+#gif * {
+    position: absolute;
+}
