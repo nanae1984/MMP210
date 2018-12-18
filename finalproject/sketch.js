@@ -8,7 +8,7 @@ var samurai;
 var ai, heart, tori;
 
 //sound
-//var bkmusic;
+var bkmusic;
 var piano;
 var stars, suns, toris, otos;
 var ais, samurais, shinobis, chos;
@@ -70,12 +70,12 @@ function preload() {
     torilogo = loadImage('gif/tori.gif');
     
     // sound
-//    bkmusic = loadSound("bkmusic.wav");
+    bkmusic = loadSound("sound/bkmusic.mp3");
     piano = loadSound("sound/piano.wav");
     chos = loadSound('sound/cho.mp3');
     stars = loadSound('sound/star.mp3');
     suns = loadSound('sound/sun.mp3');
-    toris = loadSound('sound/cho.mp3');
+    toris = loadSound('sound/tori.mp3');
     otos = loadSound('sound/oto.mp3');
     ais = loadSound('sound/ai.mp3');
     samurais = loadSound('sound/samurai.mp3');
@@ -144,12 +144,12 @@ function setup() {
     
     patelDom = createImg('gif/patel.gif');
     patelDom.size(500, 400);
-    patelDom.position(90, 50);
+    patelDom.position(90, 30);
     patelDom.parent(document.getElementById('gif'));
     
     patel2Dom = createImg('gif/patel.gif');
     patel2Dom.size(500, 400);
-    patel2Dom.position(500, 50);
+    patel2Dom.position(500, 30);
     patel2Dom.parent(document.getElementById('gif'));
 
     //bkmusic.loop();
@@ -212,6 +212,7 @@ function draw() {
     
 
     //fruits with click 
+     var s = map(sensorValue, 0, 1023, 50, 100);
     if (mouseX > 850 && mouseX < 950 && mouseY > 300 && mouseY < 380 && mouseIsPressed) {
         heartDom.show();
         if (!ais.isPlaying()) {
@@ -224,7 +225,7 @@ function draw() {
             ais.stop();
         }
     }
-
+     var s = map(sensorValue, 0, 1023, 0, 100);
      if (mouseX > 50 && mouseX < 150 && mouseY > 150 && mouseY < 250 && mouseIsPressed) {
         otoDom.show();
          if (!otos.isPlaying()) {
@@ -239,6 +240,7 @@ function draw() {
         }
     }
 //    rect(510,270, 80,80)
+     var s = map(sensorValue, 0, 1023, 10, 100);
     if (mouseX > 490 && mouseX < 600 && mouseY > 250 && mouseY < 350 && mouseIsPressed) {
         starDom.show();
         if (!stars.isPlaying()) {
@@ -251,7 +253,7 @@ function draw() {
             stars.stop();
         }
     }
-    
+     var s = map(sensorValue, 0, 1023, 0, 120);
      if (mouseX > 350 && mouseX < 450 && mouseY > 100 && mouseY < 200 && mouseIsPressed) {
         samuraiDom.show();
          if (!samurais.isPlaying()) {
@@ -264,7 +266,7 @@ function draw() {
             samurais.stop();
         }
     }
-    
+    var s = map(sensorValue, 0, 1023, 0, 100);
     if (mouseX > 150 && mouseX < 250 && mouseY > 400 && mouseY < 500 && mouseIsPressed) {
         shinobiDom.show();
         if (!shinobis.isPlaying()) {
@@ -277,6 +279,7 @@ function draw() {
             shinobis.stop();
         }
     }
+    var s = map(sensorValue, 0, 1023, 30, 120);
     if (mouseX > 720 && mouseX < 780 && mouseY > 350 && mouseY < 430 && mouseIsPressed) {
         toriDom.show();
         if (!toris.isPlaying()) {
@@ -290,7 +293,7 @@ function draw() {
         }
     }
     
-//    var s = map(sensorValue, 0, 1023, 0, 100);
+    var s = map(sensorValue, 0, 1023, 0, 100);
     if (mouseX < 400 && mouseX > 280 && mouseY < 400 && mouseY > 280 && mouseIsPressed) {
         sunDom.show();
         if (!suns.isPlaying()) {
@@ -304,7 +307,7 @@ function draw() {
         }
     }
 //   rect(650, 170, 100, 50);
-   // var s = map(sensorValue, 0, 1023, 0, 100);
+    var s = map(sensorValue, 0, 1023, 0, 100);
     if (mouseX > 650 && mouseX < 750 && mouseY > 170 && mouseY < 240 && mouseIsPressed) {
         gifDom.show();
         if (!chos.isPlaying()) {
@@ -332,4 +335,12 @@ function draw() {
        patel2Dom.hide();
     }
     
+}
+function keyPressed() {
+	if (keyCode == 32) { // Space bar
+		bkmusic.play();
+	}
+    if (keyCode == 13) { // Enter key
+			bkmusic.stop();
+		}
 }

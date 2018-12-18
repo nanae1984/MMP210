@@ -50,7 +50,11 @@ function keyPressed(){
     }
     // 32 is space
     if (keyCode == 32){
-        if (music.IsPlaying)    
+        if (music.IsPlaying()){
+            background('yellow');
+        }  else{
+            background(0)
+        }  
     }
     
 }

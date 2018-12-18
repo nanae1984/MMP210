@@ -16,7 +16,7 @@ var g = 0;
 var b = 0;
 
 function preload() {
-    apple = loadSound("apple.mp3");
+   apple = loadSound("apple.mp3");
     flip = loadSound("flip.wav");
     bkmusic = loadSound("bkmusic.wav");
 }
