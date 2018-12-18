@@ -191,8 +191,8 @@ function draw() {
     rect(0, height - 70, width, height * 0.10);
 
     //plants
-    var y = map(sensorValue, 0, 1023, height, 250);
-    var w = map(sensorValue, 0, 1023, 80, 480);
+    var y = map(sensorValue, 0, 1023, height+270, 320);
+    var w = map(sensorValue, 0, 1023, 80, 450);
     image(tree, 150, y, w);
     image(tree, 500, y, w);
     image(tree, 900, y, w);
